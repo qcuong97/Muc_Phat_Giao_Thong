@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Tra Cứu Vi Phạm Giao Thông</string>
+    <string name="tk">TK</string>
+    <string name="ph_ng_ti_n">Phương Tiện:</string>
+    <string name="_1_c_p_ng_k_bi_n_s_xe_t_xe_m_y_m_y_i_n">1. Cấp đăng ký, biến số xe ô tô, xe máy, máy điện</string>
+
+    <string name="title_activity_luu_y">LuuYActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="mess">Cảm ơn bạn đã chọn và sử  dụng ứng dụng của tôi! Hãy giúp tôi đánh giá nó và chia sẽ nó với mọi người! Chân thành cảm ơn bạn!!!</string>
+    <string name="dialog_title">Đánh giá ứng dụng</string>
+    <string name="ok">Đánh giá</string>
+    <string name="cancel">Thoát</string>
+    <string name="xe_m_y">Xe Máy</string>
+    <string name="oto">Ô Tô</string>
+    <string name="thu_tuc_giay_to">Thủ tục giấy tờ</string>
+</resources>

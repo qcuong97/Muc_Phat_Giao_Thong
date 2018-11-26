@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    tools:context=".ChiTiet_ThuTucActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_dangkyxe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/_1_c_p_ng_k_bi_n_s_xe_t_xe_m_y_m_y_i_n"
+            android:textColor="@color/blue_text"
+            android:textSize="12pt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/reka_dangky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dangkyxe">
+
+            <TextView
+                android:id="@+id/tv_cbi"
+                style="@style/tv_chuanbi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="* Chuẩn bị:" />
+
+            <TextView
+                android:id="@+id/tv_hokhau"
+                style="@style/tv_text_thutuc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_cbi"
+                android:text="- 01 bản photocopy hộ khẩu(đem kèm bản gốc)" />
+
+            <TextView
+                android:id="@+id/tv_cmnd"
+                style="@style/tv_text_thutuc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_hokhau"
+                android:text="- Chứng minh nhân nhân hoặc căn cước" />
+
+            <TextView
+                android:id="@+id/tv_phidk"
+                style="@style/tv_text_thutuc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_cmnd"
+                android:text="- Phí đăng ký, cấp biển: 50.000 vnđ" />
+
+            <TextView
+                android:id="@+id/tv_phitruocba"
+                style="@style/tv_text_thutuc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_phidk"
+                android:text="- Phí trước bạ: " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_phidk"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="217dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="134dp"
+                android:text="Đây"
+                android:textColor="@color/blue_text"
+                android:textSize="9pt"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_sosuon"
+                style="@style/tv_text_thutuc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_phitruocba"
+                android:text="- Cà số sườn,số máy tại điểm đăng ký" />
+
+            <TextView
+                style="@style/tv_ketqua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_sosuon"
+                android:text="* Điều vào biểu mẫu tại điểm đăng ký, sau 2-4 ngày có giấy đăng ký" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rela_rut_giay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reka_dangky">
+
+            <TextView
+                android:id="@+id/tv_rutdangkyxe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:text="2. Rút hồ sơ gốc xe máy, ô tô chuyển vùng khác tỉnh"
+                android:textColor="@color/blue_text"
+                android:textSize="12pt" />
+
+            <RelativeLayout
+                android:id="@+id/rela_rut_dkyxe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rutdangkyxe"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_chuanbi_2"
+                    style="@style/tv_chuanbi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="* Chuẩn bị:" />
+
+                <TextView
+                    android:id="@+id/tv_cmnd_hokhau"
+                    style="@style/tv_text_thutuc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_chuanbi_2"
+                    android:text="- CMND và sổ hộ khẩu" />
+
+                <TextView
+                    android:id="@+id/tv_giaysangten"
+                    style="@style/tv_text_thutuc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv_cmnd_hokhau"
+                    android:text="- Giấy khai sang tên, di chuyển xe; có dán bản cà số máy, số khung" />
+
+                <TextView
+                    android:id="@+id/tv_cavet"
+                    style="@style/tv_text_thutuc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_giaysangten"
+                    android:text="- Giấy chứng nhận đăng ký xe gốc( đăng kiểm với ô tô)" />
+
+                <TextView
+                    android:id="@+id/tv_hopdong"
+                    style="@style/tv_text_thutuc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_cavet"
+                    android:text="- Hợp đồng mua bán, cho, tặng xe có công chứng" />
+
+                <TextView
+                    android:id="@+id/tv_bienso"
+                    style="@style/tv_text_thutuc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_hopdong"
+                    android:text="- Không cần đem xe, chỉ cần đem biển số xe" />
+
+                <TextView
+                    style="@style/tv_ketqua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_bienso"
+                    android:text="* Sẽ nhận lại hồ sơ ngay sau khi cán bộ CSGT kiểm tra, việc kiêm tra không được quá 2 ngày" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rela_rut_giay"
+            android:id="@+id/rela_caplai_dk">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_thutuc_3"
+                android:text="3. Cấp lại giấy tờ đăng ký xe bị mất 2018"
+                android:textColor="@color/blue_text"
+                android:textSize="12pt" />
+
+            <RelativeLayout
+                android:id="@+id/rela_caplai_dk_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_thutuc_3"
+                android:layout_marginTop="16dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_chuanbi_cap_dk"
+                    style="@style/tv_chuanbi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="*Chuẩn bị" />
+
+                <TextView
+                    android:id="@+id/tv_cmnd_cap_dk"
+                    style="@style/tv_text_thutuc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_chuanbi_cap_dk"
+                    android:text="- Giấy CMND hoặc căn cước công dân, thẻ sinh viên ( từ năm 2) với sinh viên các trường trung cấp, cao đẳng, đại học chính quy" />
+
+                <TextView
+                    android:id="@+id/tv_dien_dk"
+                    style="@style/tv_text_thutuc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_cmnd_cap_dk"
+                    android:text="- Điền vào tờ giấy  khai đăng ký xe theo mẫu ( ở cơ quan csgt có sẵn)" />
+
+                <TextView
+                    android:id="@+id/tv_luu_y"
+                    style="@style/tv_chuanbi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_dien_dk"
+                    android:text="* Lưu ý:" />
+
+                <TextView
+                    style="@style/tv_text_thutuc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_luu_y"
+                    android:text="- Một số nơi CSGT sẽ yêu cầu đơn cớ mất có xác nhận của công an địa phương\n- Không cần thiết phải đem xe theo \n- Có thể uý quyền cho người khác làm giúp thông qua giấy uỷ quyền có công chứng của UBND cấp phường,xã\n- Nộp hồ sơ từ thứ 2 - thứ 7, tối đa 2 ngày sẽ nhận giấy đăng ký nếu đủ hồ sơ" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rela_cap_moi_cmnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rela_caplai_dk">
+
+            <TextView
+                android:id="@+id/tv_thutuc_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Thủ tục cấp  CMND, căn cước tại CA cấp quận, huyện, thành phố"
+                android:textColor="@color/blue_text"
+                android:textSize="12pt" />
+
+            <RelativeLayout
+                android:id="@+id/rela_cap_moi_cmnd_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_thutuc_4"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_chuanbi_cap_moi_cmnd"
+                    style="@style/tv_chuanbi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*Chuẩn bị" />
+
+                <TextView
+                    android:id="@+id/tv_noidung_capmoi_cmnd"
+                    style="@style/tv_text_thutuc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_chuanbi_cap_moi_cmnd"
+                    android:text="- Công dân Việt Nam từ đủ 14 tuổi(theo ngày, tháng, năm sinh) trở lên, đang cư trú tại VN\n - Sổ hộ khẩu\n- Đơn đề nghị cấp CMND, căn cước theo mẫu(tại cơ quan)." />
+
+                <TextView
+                    android:id="@+id/tv_quytrinh_capmoi_cmnd"
+                    style="@style/tv_chuanbi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_noidung_capmoi_cmnd"
+                    android:text="* Quy trình:" />
+
+                <TextView
+                    style="@style/tv_text_thutuc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_quytrinh_capmoi_cmnd"
+                    android:text="- Cán bộ Công an sẽ hướng dẫn\n  - Kê khai tờ cấp CMND, căn cước\n  - Chụp ảnh và in 10 ngón tay\n - Sẽ có giấy hẹn ngày đến lấy, tới ngày cầm theo giấy và lấy cmnd, căn cước." />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rela_cap_moi_cmnd">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5.Cấp lại CMND bị mất 2018"
+                android:textColor="@color/blue_text"
+                android:textSize="12pt"
+                android:id="@+id/tv_thutuc_5"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_thutuc_5"
+                android:id="@+id/rela_cap_lai_cmnd"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/tv_chuanbi_caplai_cmnd"
+                    style="@style/tv_chuanbi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="* Chuẩn bị:" />
+
+                <TextView
+                    android:id="@+id/tv_cmnd_caplai"
+                    style="@style/tv_text_thutuc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_chuanbi_caplai_cmnd"
+                    android:text="- Sổ hộ khẩu, đơn đề nghị cấp CMND có ảnh, đóng dấu giáp lai và xác nhận của công an phường, xã,thị trấn\n- 02 ảnh 3x4" />
+
+                <TextView
+                    android:id="@+id/tv_quytrinh_caplai_cmnd"
+                    style="@style/tv_chuanbi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_cmnd_caplai"
+                    android:text="* Quy trình:" />
+
+                <TextView
+                    style="@style/tv_text_thutuc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_quytrinh_caplai_cmnd"
+                    android:text="- Cán bộ công an sẽ hướng dẫn: \n - Kê khai tờ cáp CMND\n- In vân tay 2 ngón trỏ vào chỉ bản, tờ khai\n- Nhậo giấy biên nhận và đến ngày đem theo giấy để nhạn CMND(từ thứ 2 - thứ 7)." />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

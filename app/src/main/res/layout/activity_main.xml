@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/silver">
+
+    <Button
+        android:id="@+id/bt_luuy"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/white"
+        android:text="CSGT được dừng xe khi nào?"
+        android:textColor="@color/blue_text"
+        android:textSize="6pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toEndOf="@+id/bt_thutuc"
+        app:layout_constraintTop_toBottomOf="@+id/bt_xemay" />
+
+    <EditText
+        android:id="@+id/et_TK"
+        android:layout_width="281dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="Mũ bảo hiểm"
+        android:background="@drawable/layout_border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="  Nhập lỗi cần tìm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="LabelFor"
+        tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/bt_tiemkiem"
+        android:layout_width="51dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/baseline_search_black_48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et_TK"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/bt_xemay"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_TK" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="55dp"
+                android:src="@drawable/icon_moto"
+                android:background="@drawable/circle_backgroup_blue"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue_text"
+                android:text="@string/xe_m_y"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/bt_oto"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toEndOf="@+id/bt_xemay"
+        app:layout_constraintTop_toBottomOf="@+id/et_TK" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="55dp"
+                android:src="@drawable/icon_oto"
+                android:background="@drawable/circle_backgroup_blue"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oto"
+                android:textColor="@color/blue_text"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/bt_thutuc"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_xemay" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="55dp"
+                android:src="@drawable/icon_law"
+                android:background="@drawable/circle_backgroup_blue"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/thu_tuc_giay_to"
+                android:textColor="@color/blue_text"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_TK" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/ph_ng_ti_n"
+        android:textAlignment="center"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adView" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/layout_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/adView" />
+
+    <Button
+        android:id="@+id/bt_xoatext"
+        android:layout_width="14dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/icon_xoa"
+        app:layout_constraintBottom_toBottomOf="@+id/et_TK"
+        app:layout_constraintEnd_toEndOf="@+id/et_TK"
+        app:layout_constraintTop_toTopOf="@+id/et_TK"
+        app:layout_constraintVertical_bias="0.476"
+        android:visibility="gone"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-6212624214413563/6537131882"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Phiên bản: 2.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

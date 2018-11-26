@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".NhomloiActivity">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bt_vachkeduong"
+            style="@style/Button_nhom_loi"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="36dp"
+            android:drawableStart="@drawable/icon_vach_ke_duong"
+            android:text="Làn, vạch kẻ đường"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/bt_bienbao"
+            style="@style/Button_nhom_loi"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/icon_bienbao"
+            android:text="Biển báo, đèn tín hiệu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_vachkeduong" />
+
+        <Button
+            android:id="@+id/bt_tocdo"
+            style="@style/Button_nhom_loi"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/icon_tocdo"
+            android:text="Tốc độ, khoảng cách"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_bienbao" />
+
+        <Button
+            android:id="@+id/bt_dungdo"
+            style="@style/Button_nhom_loi"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/icon_dungdoxe"
+            android:text="Dừng, đỗ xe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_tocdo" />
+
+        <Button
+            android:id="@+id/bt_chuyenhuong"
+            style="@style/Button_nhom_loi"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/icon_chuyenlan"
+            android:text="Chuyển làn, chuyển hướng, nhường đường"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_dungdo" />
+
+        <Button
+            android:id="@+id/bt_nongdocon"
+            style="@style/Button_nhom_loi"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/icon_docon"
+            android:text="Rượu bia, chất kích thích"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_chuyenhuong" />
+
+        <Button
+            android:id="@+id/bt_loikhac"
+            style="@style/Button_nhom_loi"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/icon_loikhac"
+            android:text="Những lỗi khác"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_nongdocon" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

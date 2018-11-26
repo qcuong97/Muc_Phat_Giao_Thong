@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".LuuYActivity">
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/tv_chuanbi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="+ Theo Điều 14 Thông tư 01/2016, cảnh sát giao thông chỉ được dừng phương tiện trong 5 trường hợp sau:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.096"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/tv_text_thutuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="- Trực tiếp phát hiện hoặc thông qua phương tiện, thiết bị kỹ thuật nghiệp vụ phát hiện, ghi nhận được các hành vi vi phạm pháp luật về giao thông đường bộ.\n- Thực hiện mệnh lệnh, kế hoạch tuần tra, kiểm soát của Cục trưởng Cục Cảnh sát giao thông hoặc Giám đốc Công an cấp tỉnh trở lên\n- Thực hiện kế hoạch tổ chức tuần tra, kiểm soát và xử lý vi phạm, bảo đảm trật tự, an toàn giao thông của Trưởng phòng Tuần tra, kiểm soát giao thông đường bộ cao tốc thuộc Cục Cảnh sát giao thông, Trưởng phòng Cảnh sát giao thông hoặc Trưởng Công an cấp huyện trở lên\n- Có văn bản đề nghị của Thủ trưởng, Phó thủ trưởng cơ quan điều tra; văn bản đề nghị của cơ quan chức năng liên quan về dừng phương tiện để kiểm soát phục vụ công tác bảo đảm an ninh, trật tự, phòng, đấu tranh chống tội phạm và các hành vi vi phạm pháp luật khác. Văn bản đề nghị phải ghi cụ thể thời gian, tuyến đường, phương tiện dừng để kiểm soát, xử lý, lực lượng tham gia phối hợp\n- Tin báo, tố giác về hành vi vi phạm pháp luật của người và phương tiện tham gia giao thông"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            style="@style/tv_ketqua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="*** CAGT không có thẻ xanh  sẽ không thể dừng xe dù có vi phạm và nếu CAGT không chứng minh được lỗi vi pham bạn không cần phải xuất trình giấy tờ"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
