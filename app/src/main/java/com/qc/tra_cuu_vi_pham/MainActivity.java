@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void Admod_InterstittialAD() {
         mInterstitialAd = new InterstitialAd(MainActivity.this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-6212624214413563/6835271512");
+        mInterstitialAd.setAdUnitId("");
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
         mInterstitialAd.setAdListener(new AdListener(){
             @Override
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     private void Admod_Banner() {
-        MobileAds.initialize(this, "ca-app-pub-6212624214413563~2075142692");
+        MobileAds.initialize(this, "");
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
